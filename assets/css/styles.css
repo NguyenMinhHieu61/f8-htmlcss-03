@@ -334,3 +334,73 @@ a {
 .feature__btn {
     margin-top: 38px;
 }
+/* Member */
+.member__heading,
+.member__name,
+.member__address {
+    text-align: center;
+}
+.member__btn {
+    margin: 38px auto 0;
+}
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+}
+.member__avt {
+    overflow: hidden;
+    border-radius: 6px;
+}
+.member__item:hover .member__thumb {
+    transform: scale(1.1);
+}
+.member__thumb {
+    width: 270px;
+    height: 318px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: ease .2s;
+}
+.member__name {
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 1.75;
+    color: #10375C
+}
+.member__address {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #575F66;
+}
+.cta-container {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.prev,
+.next {
+    width: 36px;
+    height: 36px;
+    padding: 4px 0;
+    color: var(--primary-color);
+    background: white;
+    border: 1px solid var(--primary-color);
+}
+.prev {
+    margin-left: auto;
+}
+.next {
+    margin-right: auto;
+}
+.member__btn-cta--active,
+.prev:hover,
+.next:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+
