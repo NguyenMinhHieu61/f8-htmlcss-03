@@ -268,9 +268,10 @@ a {
 .work-item {
     margin-top: 70px;
     border: 16px solid #EAF6FF;
+    border-radius: 4px;
     padding: 44px 42px;
     cursor: pointer;
-    transition: ease-in .3s;
+    transition: ease-in .2s;
 }
 .work-item:hover {
     border-color: var(--primary-color);
@@ -295,4 +296,41 @@ a {
     font-size: 1.6rem;
     line-height: 1.75;
     color: #575F66;
+}
+/* Features */
+.feature {
+    padding: 170px 0;
+}
+.feature__row {
+    display: flex;
+    gap: 130px;
+}
+.feature__images-wrap {
+    position: relative;
+}
+
+.feature__img {
+    filter: drop-shadow(0px 14px 28px rgba(0, 0, 0, 0.07));
+    border-radius: 6px;
+    object-fit: cover;
+}
+.feature__img:first-child {
+    width: 512px;
+    height: 370px;
+}
+.feature__img:last-child {
+    position: absolute;
+    top: 121px;
+    left: 238px;
+    z-index: 1;
+    width: 322px;
+    height: 370px;
+}
+.feature__body {
+    margin-top: 60px;
+    margin-left: auto;
+    width: 40%;
+}
+.feature__btn {
+    margin-top: 38px;
 }
