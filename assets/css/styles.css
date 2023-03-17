@@ -402,5 +402,56 @@ a {
     background: var(--primary-color);
     color: #fff;
 }
-
-
+/* Install */
+.install {
+    margin-top: 265px;
+    margin-bottom: 50px;
+}
+.install__row {
+    background: var(--primary-color);
+    position: relative;
+}
+.install__image {
+    position: absolute;
+    top: -88px;
+    left: 70px;
+}
+.install__body {
+    padding: 75px 70px 75px 514px;
+}
+.install__apps {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
+.install__heading {
+    width: 489px;
+}
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+.install__link {
+    display: inline-flex;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    border-radius: 7px;
+}
+.install__img {
+    display: block;
+}
+.install__download {
+    margin-left: 10px;
+}
+.sub,
+.os {
+    color: #fff;
+}
+.sub {
+    font-size: .9rem;
+    font-weight: 500;
+}
+.os {
+    margin-top: 2px;
+    font-weight: 500;
+}
