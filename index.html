@@ -275,13 +275,13 @@
                     </article>
                     
                 </div>
-                <div class="cta-container">
-                    <div class="btn prev member__btn-cta">
+                <div class="cta-container members__cta-container">
+                    <div class="btn prev">
                         <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.5 1L0.5 6L5.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div class="btn next member__btn-cta">
+                    <div class="btn next">
                         <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.5 1L5.5 6L0.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -328,10 +328,93 @@
                 </div>
             </div>
         </section>
+        <!-- News -->
+        <section class="news">
+            <div class="container">
+                <div class="news__inner">
+                    <section class="news__content">
+                        <h2 class="section-heading">
+                            Read Latest News & Events.
+                        </h2>
+                        <a href="" class="news__more">Read All Blog</a>
+                        <div class="cta-container news__cta-container">
+                            <div class="btn prev">
+                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 1L0.5 6L5.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="btn next">
+                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 1L5.5 6L0.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="news__list">
+                        <!-- News item 1 -->
+                        <article class="news-item">
+                            <figure class="news-item__thumb">
+                                <a href="#!">
+                                    <img src="./assets/img/feature__img-1.jpg" 
+                                        alt="item" 
+                                        class="news-item__img">
+                                </a>
+                            </figure>
+                            <section class="news-item__body">
+                                <h3>
+                                    <a href="#!" class="news-item__heading">
+                                        Key Considerations for Regulatory Compliant.
+                                    </a>
+                                </h3>
+                                <p class="news-item__desc">
+                                    It’s easy to think about medical care from a narrow perspective.
+                                        You go to the hospital.
+                                </p>
+                                <a href="#!" class="news-item__more">Learn More</a>
+                            </section>
+                        </article>
+                        <!-- News item 2 -->
+                        <article class="news-item">
+                            <figure class="news-item__thumb">
+                                <a href="#!">
+                                    <img src="./assets/img/feature__img-1.jpg" 
+                                    alt="item" 
+                                    class="news-item__img">
+                                </a>
+                            </figure>
+                            <section class="news-item__body">
+                                <h3>
+                                    <a href="#!" class="news-item__heading">
+                                        Key Considerations for Regulatory Compliant.
+                                    </a>
+                                </h3>
+                                <p class="news-item__desc">
+                                    It’s easy to think about medical care from a narrow perspective.
+                                        You go to the hospital.
+                                </p>
+                                <a href="#!" class="news-item__more">Learn More</a>
+                            </section>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- Appointment -->
+        <section class="appointment">
+            <div class="container">
+                <div class="appointment__inner">
+                    <div class="section-heading appointment__heading">Always welcoming new patients</div>
+                    <p class="section-desc">Take control of your dental health 
+                        and get the personalized care you deserve. Call (541) 772-8846 to  schedule
+                    </p>
+                    <a href="" class="appointment__btn btn">appointment</a>
+                </div>
+            </div>
+        </section>
     </main>
     <script>
         const navbarItem = document.querySelectorAll('.navbar__item')
-        const memberBtns = document.querySelectorAll('.member__btn-cta')
+        const buttons = document.querySelectorAll('.cta-container .btn')
         navbarItem.forEach(item => {
             item.onclick = () => {
                 if(document.querySelector('.navbar__item.navbar__item--active')) {
@@ -340,12 +423,12 @@
                 item.classList.add('navbar__item--active')
             }
         });
-        memberBtns.forEach(function (btn) {
+        buttons.forEach(function (btn) {
             btn.onclick = () => {
-                if(document.querySelector('.member__btn-cta.member__btn-cta--active')) {
-                    document.querySelector('.member__btn-cta.member__btn-cta--active').classList.remove('member__btn-cta--active')
+                if(document.querySelector('.cta-container .btn.cta-container--active')) {
+                    document.querySelector('.cta-container .btn.cta-container--active').classList.remove('cta-container--active')
                 }
-                btn.classList.add('member__btn-cta--active')
+                btn.classList.add('cta-container--active')
             }
         });
         
